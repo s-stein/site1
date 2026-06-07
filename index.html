@@ -567,7 +567,7 @@
                     </div>
                 </div>
 
-                <!-- שלב 3 -->
+                <!-- font-black text-brand-darkText mb-2 -->
                 <div class="relative reveal" style="transition-delay: 250ms;">
                     <div class="absolute -right-[43px] top-1 w-6 h-6 rounded-full bg-white border-4 border-brand-teal shadow-md"></div>
                     <div class="flex flex-col">
@@ -966,9 +966,9 @@
                         </svg>
                     </button>
                     
-                    <a href="https://wa.me/972542830110" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-brand-indigo border border-slate-300 px-8 py-4.5 rounded-xl font-black text-base sm:text-lg transition-all flex items-center justify-center gap-2 shadow-sm">
+                    <button type="button" id="whatsapp-btn" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-brand-indigo border border-slate-300 px-8 py-4.5 rounded-xl font-black text-base sm:text-lg transition-all flex items-center justify-center gap-2 shadow-sm">
                         שלח וואטסאפ מהיר
-                    </a>
+                    </button>
                 </div>
 
             </form>
@@ -1194,6 +1194,39 @@
                 btnText.textContent = "שלח פנייה עכשיו";
                 loadingSpinner.classList.add('hidden');
             }
+        });
+
+        // לוגיקה חכמה לשליחת הודעת וואטסאפ ישירה ומעוצבת עם נתוני הטופס
+        const whatsappBtn = document.getElementById('whatsapp-btn');
+        whatsappBtn.addEventListener('click', () => {
+            // איפוס משובים
+            formFeedback.classList.add('hidden');
+            formFeedback.className = "hidden rounded-xl p-4 text-sm font-bold text-center border";
+
+            const fullname = document.getElementById('fullname').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const businessType = document.getElementById('business_type').value.trim() || "לא צוין";
+            const message = document.getElementById('message').value.trim() || "לא נכתבה הודעה";
+            const consentAccepted = document.getElementById('consent').checked;
+
+            // בדיקת שדות חובה לצורך שליחת וואטסאפ איכותי
+            if (!fullname || !phone || !email) {
+                showFeedback('נא למלא שם מלא, טלפון ואימייל בטופס כדי לשלוח את הפרטים ישירות לוואטסאפ', 'error');
+                return;
+            }
+
+            if (!consentAccepted) {
+                showFeedback('נא לסמן את תיבת האישור לאיסוף הנתונים לפני שליחת ההודעה', 'error');
+                return;
+            }
+
+            // יצירת תוכן הודעה מעוצב ברמת פרימיום כולל עיצוב מודגש בוואטסאפ (*)
+            const textContent = `שלום שלמה,\nאשמח לתיאום פגישת אסטרטגיה עסקית! הנה הפרטים המלאים שלי:\n\n*👤 שם מלא:* ${fullname}\n*📞 טלפון:* ${phone}\n*📧 אימייל:* ${email}\n*🏢 שם העסק / תחום:* ${businessType}\n*💬 הודעה:* ${message}`;
+            
+            // יצירת כתובת ה-URL עבור הוואטסאפ ופתיחה בחלון חדש
+            const waUrl = `https://wa.me/972542830110?text=${encodeURIComponent(textContent)}`;
+            window.open(waUrl, '_blank');
         });
 
         function showFeedback(msg, type) {
