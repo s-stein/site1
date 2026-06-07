@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שלמה שטיין | ייעוץ ואסטרטגיה עסקית, אוטומציות ו-AI</title>
+    <meta name="description" content="ייעוץ ומלווה עסקי המחבר בין אסטרטגיה לטכנולוגיה ו-AI. בונים מערכות שעובדות בשבילך - סדר, שליטה וצמיחה בלי להוסיף עובדים.">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="שלמה שטיין | ייעוץ ואסטרטגיה עסקית, אוטומציות ו-AI">
+    <meta property="og:description" content="סדר, שליטה וצמיחה עסקית חכמה. מחברים בין אסטרטגיה מדויקת למערכות מתקדמות.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts: Heebo (for strong, readable headings) & Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bgWarm: '#FAF7F0',      /* שמנת-אלבסטר חמימה ויוקרתית מאוד */
+                            bgCool: '#F1F5F9',      /* סלייט-אפור מקצועי ומתוחכם */
+                            bgTeal: '#ECF5F3',      /* טורקיז-סייג' פסטלי מרגיע ועשיר */
+                            card: '#FFFFFF',        /* כרטיסים לבנים נקיים */
+                            darkText: '#0F172A',    /* Slate-900 לכותרות כהות */
+                            bodyText: '#1E293B',    /* Slate-800 לקריאות אבסולוטית */
+                            mutedText: '#475569',   /* Slate-600 */
+                            indigo: '#4F46E5',      /* אינדיגו מלכותי */
+                            teal: '#0D9488',        /* טורקיז עמוק */
+                            gold: '#D97706',        /* אמבר-זהב עשיר */
+                            border: '#CBD5E1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Heebo', 'Rubik', 'sans-serif'],
+                        heading: ['Rubik', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* אפקטי זכוכית, עומק וצללים ייחודיים */
+        .glass-header {
+            background: rgba(250, 247, 240, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 2px solid rgba(203, 213, 225, 0.4);
+        }
+        .premium-card {
+            background: #FFFFFF;
+            border: 1px solid rgba(203, 213, 225, 0.7);
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 8px -1px rgba(15, 23, 42, 0.02);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .premium-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(79, 70, 229, 0.12);
+        }
+        
+        /* אנימציות כניסה מבוססות גלילה */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* התאמה אישית של פס הגלילה */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF7F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 5px;
+            border: 2px solid #FAF7F0;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4F46E5;
+        }
+
+        body {
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="text-brand-bodyText font-sans selection:bg-brand-indigo/10 selection:text-brand-indigo">
+
+
+    <!-- כפתור וואטסאפ צף מעוצב ובולט -->
+    <a href="https://wa.me/972542830110?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A9%D7%9C%D7%9E%D7%94%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%94%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%94%D7%99%D7%9C%D7%94%D7%95%D7%93%D7%95%D7%AA." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group border-2 border-white"
+       aria-label="שלח הודעה בוואטסאפ לשלמה">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.437 0 9.862-4.405 9.865-9.823.001-2.624-1.02-5.09-2.877-6.949C16.502 1.974 14.039 1.95 11.416 1.95 5.979 1.95 1.554 6.355 1.551 11.774c-.001 1.638.435 3.242 1.264 4.672L1.848 21.84l5.427-1.422c-.22.13-.42.27-.628.381zm11.366-6.83c-.27-.136-1.593-.787-1.84-.877-.246-.089-.427-.136-.608.136-.18.272-.697.877-.855 1.058-.158.18-.315.2-.585.064-.27-.136-1.139-.42-2.17-1.34-1.03-.918-1.516-1.139-1.786-1.594-.27-.454-.03-.681.106-.816.12-.12.27-.317.405-.475.136-.158.18-.271.27-.453.09-.18.045-.34-.022-.476-.068-.136-.608-1.464-.833-2.007-.22-.53-.44-.457-.608-.466-.158-.008-.338-.01-.518-.01-.18 0-.473.067-.72.34-.248.271-.945.924-.945 2.253 0 1.33.967 2.613 1.102 2.793.135.18 1.902 2.903 4.607 4.072.643.278 1.144.444 1.536.568.647.206 1.233.177 1.697.108.517-.077 1.593-.652 1.819-1.25.225-.598.225-1.11.157-1.218-.067-.108-.248-.172-.518-.308z"/>
+        </svg>
+    </a>
+
+    <!-- הדר דביק יוקרתי המותאם לפלטה החדשה -->
+    <header class="fixed top-0 left-0 w-full z-40 glass-header transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <!-- לוגו / מיתוג -->
+            <a href="#" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-indigo rounded-lg px-2 py-1">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-indigo to-brand-teal flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+                    <span class="text-white font-black text-lg tracking-tight">שש</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-brand-darkText font-extrabold text-lg leading-none tracking-wide">שלמה שטיין</span>
+                    <span class="text-brand-teal text-xs font-bold mt-1">אסטרטגיה · מערכות · AI</span>
+                </div>
+            </a>
+
+            <!-- ניווט דסקטופ ברור עם ניגודיות מעולה -->
+            <nav class="hidden md:flex items-center gap-6 text-[15px] font-bold">
+                <a href="#about" class="text-brand-mutedText hover:text-brand-indigo transition-colors py-2 focus:outline-none focus:text-brand-indigo">מי אני</a>
+                <a href="#pain" class="text-brand-mutedText hover:text-brand-indigo transition-colors py-2 focus:outline-none focus:text-brand-indigo">האתגר בעסק</a>
+                <a href="#strategy" class="text-brand-mutedText hover:text-brand-indigo transition-colors py-2 focus:outline-none focus:text-brand-indigo">הגישה שלי</a>
+                <a href="#benefits" class="text-brand-mutedText hover:text-brand-indigo transition-colors py-2 focus:outline-none focus:text-brand-indigo">התועלות</a>
+                <a href="#process" class="text-brand-mutedText hover:text-brand-indigo transition-colors py-2 focus:outline-none focus:text-brand-indigo">תהליך העבודה</a>
+                <a href="#faq" class="text-brand-mutedText hover:text-brand-indigo transition-colors py-2 focus:outline-none focus:text-brand-indigo">שאלות נפוצות</a>
+                <a href="#pricing" class="text-brand-mutedText hover:text-brand-indigo transition-colors py-2 focus:outline-none focus:text-brand-indigo">הצעה מיוחדת</a>
+            </nav>
+
+            <!-- כפתור הנעה לפעולה בהדר -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="bg-brand-indigo hover:bg-brand-indigo/90 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all hover:shadow-lg active:scale-95">
+                    בוא נתחיל
+                </a>
+            </div>
+
+            <!-- כפתור תפריט מובייל -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-darkText p-2 focus:outline-none focus:ring-2 focus:ring-brand-indigo rounded-lg" aria-label="פתח תפריט">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                    <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- תפריט מובייל נפתח, ברור ובעל ניגודיות חזקה -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-bgWarm border-b border-brand-border px-6 py-8 flex flex-col gap-5 text-base font-bold shadow-2xl">
+            <a href="#about" class="mobile-link text-brand-darkText hover:text-brand-indigo transition-colors py-1">מי אני</a>
+            <a href="#pain" class="mobile-link text-brand-darkText hover:text-brand-indigo transition-colors py-1">האתגר בעסק</a>
+            <a href="#strategy" class="mobile-link text-brand-darkText hover:text-brand-indigo transition-colors py-1">הגישה שלי</a>
+            <a href="#benefits" class="mobile-link text-brand-darkText hover:text-brand-indigo transition-colors py-1">התועלות</a>
+            <a href="#process" class="mobile-link text-brand-darkText hover:text-brand-indigo transition-colors py-1">תהליך העבודה</a>
+            <a href="#faq" class="mobile-link text-brand-darkText hover:text-brand-indigo transition-colors py-1">שאלות נפוצות</a>
+            <a href="#pricing" class="mobile-link text-brand-darkText hover:text-brand-indigo transition-colors py-1">הצעה מיוחדת</a>
+            <hr class="border-brand-border my-1">
+            <a href="#contact" class="mobile-link text-center bg-brand-indigo text-white py-3.5 rounded-xl hover:bg-brand-indigo/90 transition-colors shadow-lg font-bold">
+                בוא נתחיל בשיחת היכרות
+            </a>
+        </div>
+    </header>
+
+
+    <!-- סקשן 1: Hero (ללא תמונה, עם פריסה מרכזית יוקרתית המציגה את הבלאגן ברקע בצורה חדה) -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-slate-950">
+        
+        <!-- סרטון רקע פעיל המציג את הבלאגן והבלבול במשרד הלא יעיל -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-60 mix-blend-luminosity filter saturate-50 brightness-110">
+                <source src="https://assets.mixkit.co/videos/4607/4607-720.mp4" type="video/mp4">
+            </video>
+            <!-- שכבת מעבר צבעים אחידה המבטיחה ניגודיות וקריאות מושלמת של הטקסט הבהיר -->
+            <div class="absolute inset-0 bg-slate-950/85"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 w-full relative z-10 text-center flex flex-col items-center">
+            
+            <!-- תגית פרימיום עליונה ברורה ביותר -->
+            <div class="inline-flex items-center gap-2 bg-slate-900/90 border border-brand-indigo/50 rounded-full px-5 py-2 text-xs sm:text-sm font-bold text-teal-300 mb-8 shadow-lg">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-teal"></span>
+                </span>
+                אסטרטגיה מדויקת + טכנולוגיה חכמה
+            </div>
+
+            <h1 class="text-3.5xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-8 font-heading max-w-3xl">
+                העסק שלך רץ על מערכות מפוזרות, עבודה ידנית וטעויות שמתגלות מאוחר מדי — <span class="text-transparent bg-clip-text bg-gradient-to-l from-teal-300 to-indigo-300">זה לא חייב להיות ככה</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-300 font-medium leading-relaxed mb-10 max-w-2xl">
+                אני מסדר קודם כל את האסטרטגיה, ואז בונה לך מערכות חכמות שעובדות בשבילך — מה שמייצר עבורך סדר, שליטה וצמיחה ללא צורך בהרחבת מצבת העובדים.
+            </p>
+
+            <!-- כפתורי הנעה לפעולה מרכזיים -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full sm:w-auto">
+                <a href="#contact" class="bg-brand-indigo hover:bg-brand-indigo/90 text-white px-10 py-4.5 rounded-xl text-base sm:text-lg font-bold shadow-lg shadow-brand-indigo/30 hover:shadow-brand-indigo/40 hover:-translate-y-0.5 transition-all text-center focus:outline-none focus:ring-2 focus:ring-brand-indigo">
+                    בוא נתחיל בשיחת היכרות
+                </a>
+                <a href="https://wa.me/972542830110" target="_blank" rel="noopener noreferrer" class="bg-slate-900/90 hover:bg-slate-900/75 text-white border border-slate-700 px-10 py-4.5 rounded-xl text-base sm:text-lg font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-sm">
+                    <svg class="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.437 0 9.862-4.405 9.865-9.823.001-2.624-1.02-5.09-2.877-6.949C16.502 1.974 14.039 1.95 11.416 1.95 5.979 1.95 1.554 6.355 1.551 11.774c-.001 1.638.435 3.242 1.264 4.672L1.848 21.84l5.427-1.422c-.22.13-.42.27-.628.381zm11.366-6.83c-.27-.136-1.593-.787-1.84-.877-.246-.089-.427-.136-.608.136-.18.272-.697.877-.855 1.058-.158.18-.315.2-.585.064-.27-.136-1.139-.42-2.17-1.34-1.03-.918-1.516-1.139-1.786-1.594-.27-.454-.03-.681.106-.816.12-.12.27-.317.405-.475.136-.158.18-.271.27-.453.09-.18.045-.34-.022-.476-.068-.136-.608-1.464-.833-2.007-.22-.53-.44-.457-.608-.466-.158-.008-.338-.01-.518-.01-.18 0-.473.067-.72.34-.248.271-.945.924-.945 2.253 0 1.33.967 2.613 1.102 2.793.135.18 1.902 2.903 4.607 4.072.643.278 1.144.444 1.536.568.647.206 1.233.177 1.697.108.517-.077 1.593-.652 1.819-1.25.225-.598.225-1.11.157-1.218-.067-.108-.248-.172-.518-.308z"/>
+                    </svg>
+                    דבר איתי בוואטסאפ
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 2: מי אני (אודות) - צבע חם ועשיר (Warm Cream bgWarm) הכולל את תמונת הפורטרט האמיתית שלך -->
+    <section id="about" class="py-24 bg-brand-bgWarm relative overflow-hidden border-t-2 border-b-2 border-slate-200">
+        
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute bottom-[20%] right-[10%] w-[400px] h-[400px] rounded-full bg-brand-indigo/5 blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- צד התוכן -->
+                <div class="lg:col-span-7 reveal text-right">
+                    <span class="text-brand-indigo font-black uppercase tracking-wider text-sm block mb-3">האדם שמאחורי המספרים</span>
+                    <h2 class="text-3.5xl sm:text-4xl font-black text-brand-darkText mb-6 font-heading">
+                        היי, אני שלמה שטיין
+                    </h2>
+                    
+                    <div class="space-y-4 text-base sm:text-lg text-brand-bodyText font-medium leading-relaxed">
+                        <p>
+                            מלווה עסקים ומקים מערכות מעל 6 שנים. את דרכי התחלתי כמומחה אקסל ומנהל חשבונות בתחום ניהול הכספים לעסקים. ליוויתי מקרוב חנויות קמעונאיות, פרילנסרים, נותני שירות מקצועיים ועמותות גדולות.
+                        </p>
+                        <p>
+                            הרקע הכספי והאנליטי העמוק הזה הוא בדיוק הסיבה <strong class="text-brand-indigo font-bold">שאני תמיד מתחיל מהמספרים ומהאסטרטגיה הפיננסית,</strong> ולא רץ ישירות אל הטכנולוגיה. הבנה עסקית היא הבסיס לכל פתרון.
+                        </p>
+                        <p>
+                            ב-4 השנים האחרונות התמקדתי באוטומציות ומערכות מורכבות — Make, N8N, מערכות CRM, פיתוח פתרונות מותאמים אישית, מערכות דיוור וניוזלטרים, בוטים מתקדמים בוואטסאפ ומרכזיות ענן. בשנתיים האחרונות אני משלב כלי AI כמעט בכל תשתית שאני בונה כדי להביא לעסקים מקסימום ערך במינימום זמן.
+                        </p>
+                    </div>
+
+                    <div class="inline-flex items-center gap-3 border border-slate-300 bg-white px-5 py-3 rounded-2xl mt-6 shadow-sm">
+                        <span class="text-brand-teal text-xl font-extrabold">החזון שלי:</span>
+                        <span class="text-brand-darkText text-sm sm:text-base font-bold">לבנות מערכות חכמות שמתחילות מהבנת העסק ומחזירות את ההשקעה מהר.</span>
+                    </div>
+                </div>
+
+                <!-- צד התמונה של שלמה באודות - המציג את תמונת הפורטרט האמיתית שלך -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-[360px] aspect-[4/5] rounded-3xl overflow-hidden shadow-xl group bg-white p-3 border border-slate-300">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-indigo/10 to-brand-teal/10 rounded-3xl pointer-events-none"></div>
+                        <div class="absolute inset-2 bg-brand-bgWarm rounded-2xl flex flex-col items-center justify-center text-center p-8 z-0 overflow-hidden">
+                            <!-- תמונת אודות שלמה (התמונה האמיתית והאישית שהעלית עם קידוד ותמיכה כפולה!) -->
+                            <img id="advisor-photo-about" 
+                                 src="%E2%80%8F%E2%80%8F%D7%9C%D7%9B%D7%99%D7%93%D7%94.JPG" 
+                                 alt="שלמה שטיין - יועץ עסקי ומלווה אסטרטגי" 
+                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 z-10"
+                                 onerror="this.src='‏‏לכידה.JPG'; this.onerror=null;">
+                            
+                            <!-- פתרון גיבוי אסתטי אם התמונה אינה זמינה -->
+                            <div class="relative z-0 flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-brand-indigo/10 flex items-center justify-center mb-3 text-brand-indigo">
+                                    <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-base font-black text-brand-darkText mb-1">שלמה שטיין</h4>
+                                <p class="text-xs font-bold text-brand-mutedText">מלווה עסקים ומפתח אוטומציות</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 3: הכאב (זיהוי הבעיה) - סביבה צבעונית וממוקדת (bgCool) -->
+    <section id="pain" class="py-24 bg-brand-bgCool relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-brand-indigo font-black uppercase tracking-wider text-sm block mb-3">אתגרים נפוצים בעסקים</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText font-heading">
+                    מכיר את ההרגשה הזו בעסק שלך?
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-l from-brand-indigo to-brand-teal mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <!-- 3 כרטיסי כאב בעלי שוליים מודגשים להדגשת הבעיות -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- כרטיס כאב 1 (שוליים בצבע רוז-אדום חזק) -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal border-r-4 border-r-rose-600 border-t border-b border-l border-slate-200" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-800 mb-6 border border-rose-200">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkText mb-4">"אני לא באמת רואה מה קורה בעסק"</h3>
+                    <p class="text-brand-bodyText font-medium leading-relaxed text-[15px]">
+                        אין מקום אחד שמרכז את כלל הפעילות והנתונים. אתה נאלץ לנהל את העסק מתוך תחושות בטן ואינטואיציה ולא על סמך דוחות ונתונים בזמן אמת.
+                    </p>
+                </div>
+
+                <!-- כרטיס כאב 2 (שוליים בצבע אמבר-זהב חזק) -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal border-r-4 border-r-brand-gold border-t border-b border-l border-slate-200" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center text-brand-gold mb-6 border border-amber-200">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkText mb-4">"הכל ידני וחסרות מערכות קריטיות"</h3>
+                    <p class="text-brand-bodyText font-medium leading-relaxed text-[15px]">
+                        לפעולות כמו דיוור, בקרת עובדים או מענה בוואטסאפ אין שום תשתית ממוחשבת. דברים מתפספסים, טעויות קורות, והעובדים שורפים שעות על קליקים מבוזבזים.
+                    </p>
+                </div>
+
+                <!-- כרטיס כאב 3 (שוליים בצבע אינדיגו עמוק) -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal border-r-4 border-r-brand-indigo border-t border-b border-l border-slate-200" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center text-brand-indigo mb-6 border border-indigo-200">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkText mb-4">"כבר השקעתי במערכות בעבר וזה כשל"</h3>
+                    <p class="text-brand-bodyText font-medium leading-relaxed text-[15px]">
+                        ניסית מערכות שונות, אבל בסוף גילית שהן לא התאימו לעסק או שהעובדים פשוט התעלמו מהן. אתה חושש שכל השקעה נוספת תהיה בזבוז מוחלט של כסף.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 4: הפתרון / הגישה הייחודית - צבע טורקיז-סייג' פסטלי יפיפה (bgTeal) -->
+    <section id="strategy" class="py-24 bg-brand-bgTeal relative overflow-hidden border-t-2 border-b-2 border-slate-200">
+        
+        <div class="absolute inset-0 z-0 opacity-25">
+            <div class="absolute top-[50%] left-[10%] w-[350px] h-[350px] rounded-full bg-brand-teal/10 blur-[100px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- צד שמאל: פלואו-צ'ארט דקורטיבי ומעוצב -->
+                <div class="lg:col-span-5 order-2 lg:order-1 flex justify-center">
+                    <div class="w-full max-w-[420px] bg-white border border-slate-300 rounded-3xl p-6 shadow-md relative">
+                        <div class="absolute -top-3 right-6 bg-brand-indigo text-white text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">המתודולוגיה</div>
+                        
+                        <div class="space-y-6">
+                            <!-- שלב 1 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-brand-bgTeal/40 border border-slate-200 shadow-sm">
+                                <div class="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center font-extrabold text-sm shrink-0">01</div>
+                                <div>
+                                    <h4 class="font-bold text-brand-darkText text-base">הבנת ליבת העסק</h4>
+                                    <p class="text-brand-mutedText text-xs sm:text-sm font-bold mt-1">מה המוצר, מי הלקוח, מהו מסע הלקוח וממה נובעים האתגרים.</p>
+                                </div>
+                            </div>
+                            <!-- שלב 2 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-brand-bgCool border border-slate-200 shadow-sm">
+                                <div class="w-8 h-8 rounded-full bg-brand-indigo text-white flex items-center justify-center font-extrabold text-sm shrink-0">02</div>
+                                <div>
+                                    <h4 class="font-bold text-brand-darkText text-base">בניית אסטרטגיה עסקית</h4>
+                                    <p class="text-brand-mutedText text-xs sm:text-sm font-bold mt-1">ייעול קווי הפעילות ופירוקם לתהליכים פשוטים ומדויקים מראש.</p>
+                                </div>
+                            </div>
+                            <!-- שלב 3 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-gradient-to-l from-brand-indigo/10 to-white border-2 border-brand-indigo/30 shadow-sm">
+                                <div class="w-8 h-8 rounded-full bg-brand-indigo text-white flex items-center justify-center font-extrabold text-sm shrink-0">03</div>
+                                <div>
+                                    <h4 class="font-extrabold text-brand-indigo text-base">הטמעת טכנולוגיה ואוטומציה</h4>
+                                    <p class="text-brand-mutedText text-xs sm:text-sm font-bold mt-1">בניית מערכות המותאמות בדיוק אליכם (Make, CRM, AI, בוטים).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- צד ימין: תוכן הסברתי -->
+                <div class="lg:col-span-7 order-1 lg:order-2 reveal text-right">
+                    <span class="text-brand-teal font-black uppercase tracking-wider text-sm block mb-3">הנוסחה להצלחה שלי</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText mb-6 font-heading leading-tight">
+                        קודם אסטרטגיה — ואחר כך טכנולוגיה
+                    </h2>
+                    <p class="text-base sm:text-lg text-brand-bodyText font-medium leading-relaxed mb-6">
+                        מתוך עשרות מערכות שבניתי והטמעתי לעסקים לאורך השנים, גיליתי דפוס אחד שחוזר על עצמו פעם אחר פעם: <strong class="text-brand-darkText font-extrabold">מערכת נכשלת לא בגלל קוד פגום או קושי טכני.</strong>
+                    </p>
+                    <p class="text-base sm:text-lg text-brand-bodyText font-medium leading-relaxed mb-6">
+                        היא נכשלת כי היא נבנתה מבלי להבין לעומק את תהליכי העבודה האמיתיים, את צרכי השטח ואת הדרך שבה העובדים שלכם מתפקדים ביום-יום.
+                    </p>
+                    <div class="border-r-4 border-brand-teal pr-6 my-8 py-2 bg-white rounded-l-xl shadow-sm">
+                        <p class="text-base text-brand-mutedText font-bold italic leading-relaxed">
+                            "לכן, התהליך שלי מתחיל תמיד מהבנה מעמיקה של העסק: מה אתה מוכר, מי הם הלקוחות שלך, מהם הכאבים הגדולים ומפת המספרים שלך. רק מתוך בסיס האסטרטגיה הזה, אנחנו בונים מערכת שלא רק 'פועלת' — אלא דוחפת את העסק קדימה ומחזירה את עצמה."
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 5: התועלות - רקע לבן נקי ובוהק (bg-white) -->
+    <section id="benefits" class="py-24 bg-white relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-brand-indigo font-black uppercase tracking-wider text-sm block mb-3">מה באמת ייצא לך מזה?</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText font-heading">
+                    התועלות: תכלס, איך העסק שלך ייראה מחר?
+                </h2>
+                <p class="text-brand-mutedText font-bold mt-4">בלי מילים מפוצצות. ערך נקי שמורגש בבנק, בזמן הפנוי ובשקט הנפשי שלך.</p>
+                <div class="w-20 h-1 bg-gradient-to-l from-brand-indigo to-brand-teal mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <!-- גריד של 5 כרטיסי תועלות עם אייקונים צבעוניים -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- תועלת 1 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal border border-slate-200" style="transition-delay: 50ms;">
+                    <div class="w-12 h-12 rounded-xl bg-brand-teal/20 text-brand-teal flex items-center justify-center mb-6 shadow-sm border border-brand-teal/30">
+                        <svg class="w-6 h-6 text-teal-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black text-brand-darkText mb-3">סדר וודאות ניהולית</h3>
+                    <p class="text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed">
+                        מערכת ניהול ותפעול ריכוזית המכניסה סדר ברזל לעבודה. מעכשיו תדע בכל רגע נתון בדיוק מה קורה בעסק ובאיזה שלב נמצא כל לקוח.
+                    </p>
+                </div>
+
+                <!-- תועלת 2 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal border border-slate-200" style="transition-delay: 150ms;">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-brand-indigo flex items-center justify-center mb-6 shadow-sm border border-brand-indigo/30">
+                        <svg class="w-6 h-6 text-indigo-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black text-brand-darkText mb-3">צמיחה בלי כאבי גדילה</h3>
+                    <p class="text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed">
+                        תשתית ארגונית חזקה וממוחשבת המאפשרת לעסק שלך לקלוט פי 2 ופי 3 לקוחות באותו כוח אדם, ללא הבלגן והלחץ הנלווים בדרך כלל לצמיחה מהירה.
+                    </p>
+                </div>
+
+                <!-- תועלת 3 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal border border-slate-200" style="transition-delay: 250ms;">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-900 flex items-center justify-center mb-6 border border-emerald-300 shadow-sm">
+                        <svg class="w-6 h-6 text-emerald-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black text-brand-darkText mb-3">חיסכון בכסף ובכוח אדם</h3>
+                    <p class="text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed">
+                        אתה תזדקק לפחות עובדים כדי לבצע את אותן המשימות השגרתיות. פחות שעות עבודה מבוזבזות על הזנת נתונים והעתקה ידנית של מידע ממערכת למערכת.
+                    </p>
+                </div>
+
+                <!-- תועלת 4 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal lg:col-start-1 border border-slate-200" style="transition-delay: 350ms;">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center mb-6 border border-amber-300 shadow-sm">
+                        <svg class="w-6 h-6 text-amber-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black text-brand-darkText mb-3">שקט נפשי מטעויות אנוש</h3>
+                    <p class="text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed">
+                        אוטומציות קפדניות ומערכות בקרה חכמות שמונועות את טעויות האנוש הקטנות אך הקריטיות (כמו שכחת ליד, אי-חיוב לקוח, שליחת מייל שגוי או שכחת מעקב).
+                    </p>
+                </div>
+
+                <!-- תועלת 5 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col reveal md:col-span-2 lg:col-span-1 border border-slate-200" style="transition-delay: 450ms;">
+                    <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-900 flex items-center justify-center mb-6 border border-rose-300 shadow-sm">
+                        <svg class="w-6 h-6 text-rose-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black text-brand-darkText mb-3">חוויית לקוח "וואו" חלקה</h3>
+                    <p class="text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed">
+                        תהליך אינטראקציה תפעולי, מהיר ומקצועי מול הלקוחות שלך, שגורם להם להרגיש מטופלים ברמה הגבוהה ביותר ומעודד אותם לחזור ולהמליץ עליך לאחרים.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 6: תוצאה בולטת (Highlight) - סקשן סופר צבעוני, יוקרתי, קונטרסטי ומרהיב -->
+    <section class="py-24 bg-gradient-to-r from-indigo-900 via-brand-indigo to-teal-800 border-t-2 border-b-2 border-brand-indigo relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(250,247,240,0.15),transparent)] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <span class="text-teal-200 font-black uppercase tracking-widest text-sm block mb-4">מקרה בוחן אמיתי בשטח</span>
+            
+            <div class="max-w-4xl mx-auto my-6">
+                <!-- מדד מספרי מרשים ומעוצב בקפידה -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+                    <span class="text-7xl sm:text-9xl font-black text-white tracking-tighter leading-none">10</span>
+                    <span class="text-3xl sm:text-5xl font-extrabold text-teal-100 leading-none">עובדים</span>
+                    <span class="text-3xl sm:text-5xl font-bold text-teal-200 leading-none">←</span>
+                    <span class="text-7xl sm:text-9xl font-black text-teal-300 tracking-tighter leading-none animate-pulse">1</span>
+                    <span class="text-3xl sm:text-5xl font-extrabold text-white leading-none">עובד בלבד</span>
+                </div>
+                
+                <h3 class="text-2xl sm:text-4xl font-black text-white leading-snug mb-6 font-heading">
+                    תהליך מורכב שהעסיק 10 אנשים — רץ כיום עם עובד אחד בלבד, 3 שעות בשבוע, ובדיוק גבוה הרבה יותר מבעבר.
+                </h3>
+                <p class="text-base sm:text-lg text-teal-50 font-bold max-w-2xl mx-auto">
+                    זוהי העוצמה של חיבור נכון בין אסטרטגיית פעולה חכמה לבין תשתית אוטומציה ו-AI מדויקת שנבנית בדיוק למידות של העסק.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 7: איך זה עובד (תהליך העבודה) - (bgCool) -->
+    <section id="process" class="py-24 bg-brand-bgCool relative z-10 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="text-brand-indigo font-black uppercase tracking-wider text-sm block mb-3">צעד אחר צעד</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText font-heading">
+                    איך נראה תהליך העבודה איתי?
+                </h2>
+                <p class="text-brand-mutedText font-bold mt-4">אנחנו לא קופצים למים בלי תוכנית. הנה השלבים שלנו בדרך לעסק יעיל ומנוהל:</p>
+                <div class="w-20 h-1 bg-gradient-to-l from-brand-indigo to-brand-teal mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <!-- ציר זמן / תהליך ויזואלי ברור -->
+            <div class="relative border-r-4 border-slate-300 max-w-3xl mx-auto pr-8 space-y-12">
+                
+                <!-- שלב 1 -->
+                <div class="relative reveal" style="transition-delay: 50ms;">
+                    <!-- נקודת הציון על הציר -->
+                    <div class="absolute -right-[43px] top-1 w-6 h-6 rounded-full bg-white border-4 border-brand-teal shadow-md"></div>
+                    <div class="flex flex-col">
+                        <span class="text-xs font-black text-brand-teal uppercase tracking-widest mb-1">שלב 1</span>
+                        <h3 class="text-xl font-black text-brand-darkText mb-2">שיחת טלפון להיכרות</h3>
+                        <p class="text-brand-bodyText font-medium leading-relaxed text-sm sm:text-base">
+                            שיחה קצרה שבה נבדוק התאמה ראשונית לחלוטין בלי התחייבות. נשמע קצת על העסק, על הצרכים ונבין האם אני אכן האיש הנכון לעזור לך.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- שלב 2 -->
+                <div class="relative reveal" style="transition-delay: 150ms;">
+                    <div class="absolute -right-[43px] top-1 w-6 h-6 rounded-full bg-white border-4 border-brand-indigo shadow-md"></div>
+                    <div class="flex flex-col">
+                        <span class="text-xs font-black text-brand-indigo uppercase tracking-widest mb-1">שלב 2</span>
+                        <h3 class="text-xl font-black text-brand-darkText mb-2">פגישת היכרות בעסק</h3>
+                        <p class="text-brand-bodyText font-medium leading-relaxed text-sm sm:text-base">
+                            נפגשים ומכירים את השטח לעומק. אני רוצה לראות בעיניים איך דברים מתנהלים אצלך, לשמוע את העובדים, ולמפות את צווארי הבקבוק הנוכחיים שלכם.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- שלב 3 -->
+                <div class="relative reveal" style="transition-delay: 250ms;">
+                    <div class="absolute -right-[43px] top-1 w-6 h-6 rounded-full bg-white border-4 border-brand-teal shadow-md"></div>
+                    <div class="flex flex-col">
+                        <span class="text-xs font-black text-brand-teal uppercase tracking-widest mb-1">שלב 3</span>
+                        <h3 class="text-xl font-black text-brand-darkText mb-2">בניית אסטרטגיה מותאמת</h3>
+                        <p class="text-brand-bodyText font-medium leading-relaxed text-sm sm:text-base">
+                            בין 2 ל-4 פגישות עבודה אינטנסיביות שבהן אנו ממפים את העסק לחלוטין ומגדירים מה בדיוק צריך להיבנות כדי להגיע ליעדים — פיננסיים ותפעוליים.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- שלב 4 -->
+                <div class="relative reveal" style="transition-delay: 350ms;">
+                    <div class="absolute -right-[43px] top-1 w-6 h-6 rounded-full bg-white border-4 border-brand-indigo shadow-md"></div>
+                    <div class="flex flex-col">
+                        <span class="text-xs font-black text-brand-indigo uppercase tracking-widest mb-1">שלב 4</span>
+                        <h3 class="text-xl font-black text-brand-darkText mb-2">בנייה והטמעת מערכות</h3>
+                        <p class="text-brand-bodyText font-medium leading-relaxed text-sm sm:text-base">
+                            בניית המערכות בפועל. התמחור מתבצע פר פרויקט מוגדר מראש, וכולל ליווי שוטף והדרכה מלאה של העובדים שלכם עד שהמערכות רצות בצורה חלקה ביום-יום.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 8: לקוחות וארגונים (Social Proof) - (bgWarm) -->
+    <section class="py-16 bg-brand-bgWarm relative z-10 border-b-2 border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <p class="text-center text-brand-indigo text-sm font-black tracking-widest uppercase mb-10">מומחיות מוכחת בשיתוף פעולה וארגונים מובילים</p>
+            
+            <!-- שורת לוגואים אלגנטית בעלת קונטרסט מחוזק -->
+            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16">
+                
+                <div class="flex items-center justify-center gap-2 text-slate-800 hover:text-brand-indigo transition-colors duration-300">
+                    <span class="font-extrabold text-xl sm:text-2xl font-heading">הגמ"ח המרכזי</span>
+                </div>
+
+                <div class="flex items-center justify-center gap-2 text-slate-800 hover:text-brand-indigo transition-colors duration-300">
+                    <span class="font-extrabold text-xl sm:text-2xl font-heading">מרכז הצדקה</span>
+                </div>
+
+                <div class="flex items-center justify-center gap-2 text-slate-800 hover:text-brand-indigo transition-colors duration-300">
+                    <span class="font-extrabold text-xl sm:text-2xl font-heading">איחוד הצלה</span>
+                </div>
+
+                <div class="flex items-center justify-center gap-2 text-slate-800 hover:text-brand-indigo transition-colors duration-300 flex-col items-center">
+                    <span class="font-extrabold text-xl sm:text-2xl font-heading leading-none">מערכת העיתון "משפחה"</span>
+                    <span class="text-xs text-brand-teal font-extrabold mt-1">הפקות פרויקטים</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 9: המלצות (עדויות) - (bg-white) -->
+    <section class="py-24 bg-white relative z-10 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-brand-indigo font-black uppercase tracking-wider text-sm block mb-3">שומעים מהשטח</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText font-heading">
+                    הלקוחות שלנו מספרים
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-l from-brand-indigo to-brand-teal mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <!-- גריד של המלצות -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- המלצה 1 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col justify-between reveal border border-slate-200" style="transition-delay: 50ms;">
+                    <div>
+                        <!-- כוכבי דירוג כהים ובולטים -->
+                        <div class="flex items-center gap-1 text-brand-gold mb-6">
+                            <span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span>
+                        </div>
+                        <p class="text-brand-bodyText text-sm sm:text-base font-medium leading-relaxed italic mb-6">
+                            "העסק שלי מורכב — המון פריטים, המון דאטה, והרבה זמן שנשרף על רישומים ידניים. שלמה לקח את כל המורכבות הזו וחסך לי המון זמן וכסף. הוא לא רק מבין אקסל ואוטומציות ברמה הכי גבוהה שיש — הוא קשוב, פתוח לכל שינוי ומתאים את הפתרון בדיוק לצרכים שלי. אין לי מישהו יותר טוב."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-indigo/15 text-brand-indigo flex items-center justify-center font-bold text-sm">
+                            ח
+                        </div>
+                        <div>
+                            <h4 class="font-black text-brand-darkText text-sm">לקוח מרוצה</h4>
+                            <p class="text-xs sm:text-sm font-bold text-brand-mutedText">חנות יבואן וקמעונאי</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- המלצה 2 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col justify-between reveal border border-slate-200" style="transition-delay: 150ms;">
+                    <div>
+                        <div class="flex items-center gap-1 text-brand-gold mb-6">
+                            <span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span>
+                        </div>
+                        <p class="text-brand-bodyText text-sm sm:text-base font-medium leading-relaxed italic mb-6">
+                            "הגעתי עם רעיון שהיה לי בראש הרבה זמן, בלי מושג איך ליישמים אותו בפועל. שלמה למד את המשימה לעומק וביצע אותה בדיוק כפי שדמיינתי — עד הניואנסים הכי קטנים. הוא באמת מבין מה הלקוח צריך, והשירות שלו והליווי אחרי ההקמה הם פשוט מדהימים."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-teal/20 text-brand-teal flex items-center justify-center font-bold text-sm">
+                            א
+                        </div>
+                        <div>
+                            <h4 class="font-black text-brand-darkText text-sm">מנהל פרויקטים</h4>
+                            <p class="text-xs sm:text-sm font-bold text-brand-mutedText">ארגון חסד מוביל</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- המלצה 3 -->
+                <div class="premium-card rounded-3xl p-8 flex flex-col justify-between reveal border border-slate-200" style="transition-delay: 250ms;">
+                    <div>
+                        <div class="flex items-center gap-1 text-brand-gold mb-6">
+                            <span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span>
+                        </div>
+                        <p class="text-brand-bodyText text-sm sm:text-base font-medium leading-relaxed italic mb-6">
+                            "העבודה עם שלמה שינתה את חוקי המשחק אצלנו בעמותה. פתאום כל ניהול הדיוור וההודעות למתנדבים קורה מעצמו דרך בוטים חכמים. העבודה נעשית בדיוק של שעון שוויצרי. שירות מקצועי, אמין ובעיקר אנושי ובגובה העיניים."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-indigo/15 text-brand-indigo flex items-center justify-center font-bold text-sm">
+                            ע
+                        </div>
+                        <div>
+                            <h4 class="font-black text-brand-darkText text-sm">מנהל עמותה</h4>
+                            <p class="text-xs sm:text-sm font-bold text-brand-mutedText">מגזר ציבורי</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 10: שאלות ותשובות (אקורדיון) - (bgWarm) -->
+    <section id="faq" class="py-24 bg-brand-bgWarm relative z-10 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-brand-indigo font-black uppercase tracking-wider text-sm block mb-3">שקיפות מלאה</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText font-heading">
+                    שאלות ותשובות נפוצות
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-l from-brand-indigo to-brand-teal mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <!-- רכיב אקורדיון קריא ביותר -->
+            <div class="space-y-4">
+                
+                <!-- שאלה 1 -->
+                <div class="bg-white border border-slate-300 rounded-2xl overflow-hidden transition-colors shadow-sm">
+                    <button class="faq-btn w-full px-6 py-5 text-right flex items-center justify-between text-brand-darkText font-black text-base sm:text-lg focus:outline-none focus:bg-brand-bgWarm">
+                        <span>מי מבטיח לי שזה יעבוד אצלי בעסק?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-indigo transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-brand-bgWarm/30">
+                        <p class="px-6 pb-5 pt-2 text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed border-t border-slate-200">
+                            בדיוק בגלל החשש הזה אני לא קופץ ישירות לבניית מערכות. הכל מתחיל אצלנו מהבנה לעומק של צרכי העסק וניתוח כדאיות פיננסי מדויק — אנחנו בונים ומשקיעים רק במה שבאמת מתאים ומחזיר את עצמו בצורה מוכחת. עם ניסיון עשיר ותוצאות מדידות, אתה לא קונה פה הבטחות באוויר אלא תהליך מסודר ומבוסס נתונים.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- שאלה 2 -->
+                <div class="bg-white border border-slate-300 rounded-2xl overflow-hidden transition-colors shadow-sm">
+                    <button class="faq-btn w-full px-6 py-5 text-right flex items-center justify-between text-brand-darkText font-black text-base sm:text-lg focus:outline-none focus:bg-brand-bgWarm">
+                        <span>זה נראה לי כמו הוצאה יקרה מאוד...</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-indigo transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-brand-bgWarm/30">
+                        <p class="px-6 pb-5 pt-2 text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed border-t border-slate-200">
+                            זו הסיבה שאנו מתחילים מניתוח כלכלי מעמיק, כדי שתדע בדיוק מראש כיצד ההשקעה הזו עומדת להחזיר את עצמה בתוך חודשים ספורים. אנחנו לא בונים את הכל בבת אחת: אנו עובדים לפי סדר עדיפויות מוגדר מראש ובהתאם לצורכי העסק העכשוויים שלך, כך שההשקעה מבוקרת ונושאת פירות כבר מההתחלה.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- שאלה 3 -->
+                <div class="bg-white border border-slate-300 rounded-2xl overflow-hidden transition-colors shadow-sm">
+                    <button class="faq-btn w-full px-6 py-5 text-right flex items-center justify-between text-brand-darkText font-black text-base sm:text-lg focus:outline-none focus:bg-brand-bgWarm">
+                        <span>אין לי פנאי וזמן להיכנס לתהליך כזה עכשיו</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-indigo transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-brand-bgWarm/30">
+                        <p class="px-6 pb-5 pt-2 text-brand-bodyText font-medium text-sm sm:text-base leading-relaxed border-t border-slate-200">
+                            אתה מרגיש שאין לך זמן בדיוק בגלל שהעסק שלך מנוהל כרגע על עבודה ידנית, כיבוי שריפות ובלגן תפעולי — וזה בדיוק המצב שאנחנו באים לפתור יחד. תהליך העבודה דורש ממך מינימום מעורבות וזמן שבועי. אני לוקח על עצמי את כל מלאכת המיפוי, האפיון, בניית המערכות וההטמעה בפועל מול העובדים שלך.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 11: הצעה ותמחור + דחיפות - (רקע כחלחל-סגלגל בהיר bg-indigo-50/70) -->
+    <section id="pricing" class="py-24 bg-indigo-50/70 relative z-10 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-brand-gold font-black uppercase tracking-wider text-sm block mb-3">הזדמנות בלעדית</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText font-heading">
+                    הצעה ותמחור ללקוחות הראשונים
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-l from-brand-indigo to-brand-teal mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <!-- כרטיס תמחור מיוחד - פרימיום מעוצב, ניגודיות משופרת -->
+            <div class="relative bg-white border-2 border-brand-indigo rounded-3xl p-8 sm:p-12 shadow-xl overflow-hidden reveal">
+                
+                <!-- תגית דחיפות פינתית -->
+                <div class="absolute top-6 left-[-40px] rotate-[315deg] bg-brand-gold text-white font-black text-xs py-2 px-12 uppercase tracking-wider shadow-md">
+                    מוגבל ל-5 בלבד!
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-7">
+                        <h3 class="text-2xl sm:text-3xl font-black text-brand-darkText mb-4">5 הלקוחות הראשונים — במחיר השקה מיוחד</h3>
+                        <p class="text-brand-bodyText font-medium text-base leading-relaxed mb-6">
+                            כדי לתת לכל עסק את הליווי המעמיק והאישי ביותר, אני מקבל מספר מצומצם מאוד של פרויקטים במקביל. לרגל השקת השירות המשולב, 5 הנרשמים הראשונים ייהנו ממחיר מופחת ובונוסים בשווי אלפי שקלים.
+                        </p>
+                        
+                        <!-- פירוט חבילה - ברור וקריא לחלוטין -->
+                        <ul class="space-y-4 mb-8 text-sm sm:text-base text-brand-bodyText font-semibold">
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-teal text-xl">✔</span>
+                                <div>
+                                    <strong class="text-brand-darkText font-extrabold">פגישת אסטרטגיה עסקית מקיפה (כולל סיכום אסטרטגי כתוב):</strong> 
+                                    <span class="text-brand-bodyText">רק 200–250 ₪ לפגישה (במקום 350–400 ₪ מחיר רגיל).</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-teal text-xl">✔</span>
+                                <div>
+                                    <strong class="text-brand-darkText font-extrabold">הקמת מערכות אוטומציה ו-AI:</strong> 
+                                    <span class="text-brand-bodyText">תמחור שקוף וקבוע לכל פרויקט לפי הערכת שעות עבודה מוגדרת.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-teal text-xl">✔</span>
+                                <div>
+                                    <strong class="text-brand-darkText font-extrabold">ליווי ותמיכה שוטפת:</strong> 
+                                    <span class="text-brand-bodyText">בנק שעות חודשי גמיש ומותאם (4–10 שעות חודשיות).</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- אזור הבונוסים הגדולים והדחיפות - גופנים גדולים וברורים יותר -->
+                    <div class="lg:col-span-5 bg-brand-bgWarm border border-slate-300 rounded-2xl p-6 sm:p-8 flex flex-col items-stretch shadow-sm">
+                        <h4 class="text-brand-indigo font-black text-base uppercase tracking-wider mb-4 text-center border-b pb-2">בונוסים ל-5 המהירים:</h4>
+                        
+                        <div class="space-y-3 text-sm mb-6 text-brand-darkText font-bold">
+                            <div class="flex items-center gap-2">
+                                <span class="text-brand-gold">★</span>
+                                <span>הנחת תשלום מראש (50 ₪ פחות לשעה)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-brand-gold">★</span>
+                                <span>בונוס בנק שעות (10+ שעות ← 2 שעות מתנה)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-brand-gold">★</span>
+                                <span>דו"ח סיכום אסטרטגי מקיף בכתב</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-brand-gold">★</span>
+                                <span>תשאול לקוחות מקיף במתנה (בשווי שעה וחצי)</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t-2 border-slate-300 pt-4 text-center">
+                            <span class="text-brand-gold font-extrabold text-xs sm:text-sm block mb-2">שים לב:</span>
+                            <span class="text-brand-bodyText text-xs sm:text-sm font-semibold leading-relaxed block">
+                                המקומות והבונוסים שמורים ל-5 הלקוחות הראשונים בלבד. אני עובד אקסקלוסיבית עם מספר קטן של עסקים כדי להבטיח תוצאות פנומנליות.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- סקשן 12: טופס יצירת קשר + CTA סופי - (bgTeal) -->
+    <section id="contact" class="py-24 bg-brand-bgTeal relative overflow-hidden">
+        
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute top-[30%] left-[20%] w-[450px] h-[450px] rounded-full bg-brand-teal/5 blur-[120px]"></div>
+            <div class="absolute bottom-[20%] right-[10%] w-[450px] h-[450px] rounded-full bg-brand-indigo/5 blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-indigo font-black uppercase tracking-wider text-sm block mb-3">נעשה סדר יחד?</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-darkText font-heading leading-tight">
+                    מוכן להפסיק לכבות שריפות ולהתחיל לנהל עסק שעובד בשבילך?
+                </h2>
+                <p class="text-brand-mutedText font-bold mt-4">מלא את הפרטים ונחזור אליך בהקדם לשיחת היעוץ והתאמה ראשונית.</p>
+                <div class="w-20 h-1 bg-gradient-to-l from-brand-indigo to-brand-teal mx-auto mt-5 rounded-full"></div>
+            </div>
+
+            <!-- טופס יצירת קשר פרימיום בעל ניגודיות מלאה -->
+            <form id="lead-form" class="bg-white border border-slate-300 p-8 sm:p-12 rounded-3xl space-y-6 shadow-xl">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- שם מלא -->
+                    <div class="flex flex-col gap-2">
+                        <label for="fullname" class="text-sm sm:text-base font-bold text-brand-darkText">שם מלא <span class="text-rose-600 font-extrabold">*</span></label>
+                        <input type="text" id="fullname" name="fullname" required
+                               class="bg-brand-bgCool border border-slate-300 focus:border-brand-indigo focus:ring-2 focus:ring-brand-indigo/20 text-brand-darkText font-semibold px-4 py-3.5 rounded-xl outline-none transition-colors placeholder:text-brand-mutedText/60 text-sm sm:text-base"
+                               placeholder="ישראל ישראלי">
+                    </div>
+                    <!-- טלפון -->
+                    <div class="flex flex-col gap-2">
+                        <label for="phone" class="text-sm sm:text-base font-bold text-brand-darkText">מספר טלפון <span class="text-rose-600 font-extrabold">*</span></label>
+                        <input type="tel" id="phone" name="phone" required
+                               class="bg-brand-bgCool border border-slate-300 focus:border-brand-indigo focus:ring-2 focus:ring-brand-indigo/20 text-brand-darkText font-semibold px-4 py-3.5 rounded-xl outline-none transition-colors placeholder:text-brand-mutedText/60 text-sm sm:text-base"
+                               placeholder="050-1234567">
+                    </div>
+                </div>
+
+                <!-- שם העסק / תחום -->
+                <div class="flex flex-col gap-2">
+                    <label for="business_type" class="text-sm sm:text-base font-bold text-brand-darkText">שם העסק / תחום פעילות</label>
+                    <input type="text" id="business_type" name="business_type"
+                           class="bg-brand-bgCool border border-slate-300 focus:border-brand-indigo focus:ring-2 focus:ring-brand-indigo/20 text-brand-darkText font-semibold px-4 py-3.5 rounded-xl outline-none transition-colors placeholder:text-brand-mutedText/60 text-sm sm:text-base"
+                           placeholder="לדוגמה: קמעונאות, עמותה, משרד עו״ד...">
+                </div>
+
+                <!-- הודעה קצרה -->
+                <div class="flex flex-col gap-2">
+                    <label for="message" class="text-sm sm:text-base font-bold text-brand-darkText">הודעה קצרה (אופציונלי)</label>
+                    <textarea id="message" name="message" rows="4"
+                              class="bg-brand-bgCool border border-slate-300 focus:border-brand-indigo focus:ring-2 focus:ring-brand-indigo/20 text-brand-darkText font-semibold px-4 py-3.5 rounded-xl outline-none transition-colors placeholder:text-brand-mutedText/60 text-sm sm:text-base resize-none"
+                              placeholder="ספר לי בכמה מילים על האתגר העיקרי שלך כרגע בעסק..."></textarea>
+                </div>
+
+                <!-- הודעות משוב (הצלחה/שגיאה) מובנות בטופס -->
+                <div id="form-feedback" class="hidden rounded-xl p-4 text-sm font-bold text-center border"></div>
+
+                <!-- כפתור שליחה וכפתור וואטסאפ נוסף -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+                    <button type="submit" id="submit-btn" class="w-full sm:w-auto flex-1 bg-brand-indigo hover:bg-brand-indigo/90 text-white font-black px-8 py-4.5 rounded-xl shadow-md transition-all active:scale-95 flex items-center justify-center gap-2 text-base sm:text-lg">
+                        <span id="btn-text">שלח פנייה עכשיו</span>
+                        <svg id="loading-spinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </button>
+                    
+                    <a href="https://wa.me/972542830110" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-brand-indigo border border-slate-300 px-8 py-4.5 rounded-xl font-black text-base sm:text-lg transition-all flex items-center justify-center gap-2 shadow-sm">
+                        שלח וואטסאפ מהיר
+                    </a>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- פוטר האתר -->
+    <footer class="bg-slate-900 text-white py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-right">
+                
+                <!-- לוגו ומשפט תמציתי -->
+                <div class="flex flex-col items-center md:items-start gap-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-indigo to-brand-teal flex items-center justify-center text-white font-bold text-base">
+                            שש
+                        </div>
+                        <span class="text-white font-bold text-base">שלמה שטיין</span>
+                    </div>
+                    <p class="text-slate-300 text-sm mt-1">אסטרטגיה עסקית מובילה, תהליכי אוטומציה ו-AI.</p>
+                </div>
+
+                <!-- פרטי התקשרות מהירים -->
+                <div class="flex flex-col items-center gap-1">
+                    <span class="text-slate-400 text-xs font-bold uppercase tracking-wider">צור קשר ישיר</span>
+                    <a href="tel:0542830110" class="text-white hover:text-brand-teal font-extrabold transition-colors text-base">054-2830110</a>
+                    <a href="mailto:info@shlomo-stein.co.il" class="text-slate-300 hover:text-white transition-colors text-sm">info@shlomo-stein.co.il</a>
+                </div>
+
+                <!-- זכויות יוצרים -->
+                <div class="flex flex-col items-center md:items-end text-center md:text-left gap-2">
+                    <span class="text-slate-300 text-sm font-semibold">&copy; 2026 שלמה שטיין. כל הזכויות שמורות.</span>
+                    <span class="text-xs text-slate-400 font-medium">עיצוב ופיתוח פרימיום בעבודת יד מותאמת אישית.</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- מודל הצלחה מותאם אישית (ללא שימוש ב-Alert) -->
+    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/70 backdrop-blur-md hidden transition-opacity duration-300">
+        <div class="bg-white border border-slate-300 p-8 rounded-3xl max-w-md w-full mx-6 text-center shadow-2xl relative">
+            <div class="w-16 h-16 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center mx-auto mb-6 shadow-inner">
+                <svg class="w-8 h-8 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-black text-brand-darkText mb-3">השליחה בוצעה בהצלחה!</h3>
+            <p class="text-brand-bodyText text-sm sm:text-base font-semibold leading-relaxed mb-6">
+                הפרטים שלך הגיעו אלינו בהצלחה. שלמה שטיין או אחד מנציגיו יצרו איתך קשר טלפוני בהקדם האפשרי.
+            </p>
+            <button id="close-modal-btn" class="w-full bg-brand-indigo hover:bg-brand-indigo/90 text-white font-black py-3 px-6 rounded-xl transition-colors shadow-md text-base">
+                סגור והמשך לגלוש
+            </button>
+        </div>
+    </div>
+
+    <!-- לוגיקה ואנימציות JavaScript (Vanilla) -->
+    <script>
+        // ==========================================
+        // הגדרת כתובת ה-WEBHOOK שלך:
+        // הדבק כאן את כתובת ה-Webhook שקיבלת מ-Make, N8N, Zapier וכו׳.
+        // ==========================================
+        const WEBHOOK_URL = "https://n8n.boostly.biz/webhook/c57e0a00-2976-1992-a60f-2986ae139974"; 
+
+        // 1. לוגיקת תפריט מובייל
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // סגירת התפריט בלחיצה על קישור כלשהו
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // 2. לוגיקת אקורדיון שאלות ותשובות (FAQ)
+        const faqBtns = document.querySelectorAll('.faq-btn');
+
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const parent = btn.parentElement;
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.faq-icon');
+                
+                // סגירת כל שאר השאלות הפתוחות
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item !== content) {
+                        item.style.maxHeight = null;
+                        item.parentElement.classList.remove('border-brand-indigo');
+                        item.previousElementSibling.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    parent.classList.remove('border-brand-indigo');
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    parent.classList.add('border-brand-indigo');
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // 3. אנימציות גלילה עדינות (Intersection Observer)
+        const reveals = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // מניעת הפעלה מחדש בגלילה חוזרת
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        reveals.forEach(reveal => {
+            reveal.classList.add('reveal'); // וידוא שיש לו את המחלקה הבסיסית
+            revealOnScroll.observe(reveal);
+        });
+
+        // 4. שליחת טופס עם ולידציה וחיבור ל-Webhook
+        const leadForm = document.getElementById('lead-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const formFeedback = document.getElementById('form-feedback');
+        
+        const successModal = document.getElementById('success-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        leadForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // איפוס משובים
+            formFeedback.classList.add('hidden');
+            formFeedback.className = "hidden rounded-xl p-4 text-sm font-bold text-center border";
+
+            // איסוף נתונים
+            const fullname = document.getElementById('fullname').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const businessType = document.getElementById('business_type').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // ולידציה בסיסית נוספת
+            if (!fullname || !phone) {
+                showFeedback('נא למלא את כל שדות החובה (*)', 'error');
+                return;
+            }
+
+            // הפעלת מצב טעינה בכפתור השליחה
+            submitBtn.disabled = true;
+            btnText.textContent = "שולח נתונים...";
+            loadingSpinner.classList.remove('hidden');
+
+            const payload = {
+                fullname: fullname,
+                phone: phone,
+                business_type: businessType || "לא צוין עסק",
+                message: message || "לא צוינה הודעה",
+                source: "שירותי ייעוץ עסקי - שלמה שטיין",
+                submitted_at: new Date().toISOString()
+            };
+
+            try {
+                // בדיקה אם המשתמש הגדיר Webhook
+                if (!WEBHOOK_URL || WEBHOOK_URL === "") {
+                    // סימולציה למטרות פיתוח אם אין URL
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    console.log("נתוני הטופס שהיו נשלחים (אין Webhook מוגדר):", payload);
+                } else {
+                    // שליחה אמיתית ל-Webhook ב-POST JSON
+                    const response = await fetch(WEBHOOK_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('שגיאה בתקשורת עם השרת');
+                    }
+                }
+
+                // הצגת הודעת הצלחה מותאמת אישית (מודל)
+                openSuccessModal();
+                leadForm.reset();
+
+            } catch (error) {
+                console.error(error);
+                showFeedback('אירעה שגיאה בשליחת הטופס. אנא נסה שוב או פנה ישירות בוואטסאפ.', 'error');
+            } finally {
+                // כיבוי מצב טעינה
+                submitBtn.disabled = false;
+                btnText.textContent = "שלח פנייה עכשיו";
+                loadingSpinner.classList.add('hidden');
+            }
+        });
+
+        function showFeedback(msg, type) {
+            formFeedback.classList.remove('hidden');
+            formFeedback.textContent = msg;
+            if (type === 'error') {
+                formFeedback.classList.add('bg-rose-50', 'text-rose-800', 'border-rose-300');
+            } else {
+                formFeedback.classList.add('bg-emerald-50', 'text-emerald-800', 'border-emerald-300');
+            }
+        }
+
+        function openSuccessModal() {
+            successModal.classList.remove('hidden');
+            successModal.classList.add('opacity-100');
+            document.body.style.overflow = 'hidden'; // מניעת גלילה כשהמודל פתוח
+        }
+
+        function closeSuccessModal() {
+            successModal.classList.add('hidden');
+            successModal.classList.remove('opacity-100');
+            document.body.style.overflow = 'auto'; // החזרת גלילה
+        }
+
+        closeModalBtn.addEventListener('click', closeSuccessModal);
+        
+        // סגירה של המודל בלחיצה מחוץ לתוכן שלו
+        successModal.addEventListener('click', (e) => {
+            if (e.target === successModal) {
+                closeSuccessModal();
+            }
+        });
+    </script>
+</body>
+</html>
